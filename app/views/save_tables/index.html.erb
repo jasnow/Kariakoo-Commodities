@@ -1,0 +1,41 @@
+<h1>Listing save_tables</h1>
+
+<table>
+  <tr>
+    <th>Sale date</th>
+    <th>Market type</th>
+    <th>Location</th>
+    <th>Volume</th>
+    <th>Unit</th>
+    <th>String</th>
+    <th>Quality</th>
+    <th>Commodity</th>
+    <th>Price received</th>
+    <th>Price receiptunit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @save_tables.each do |save_table| %>
+  <tr>
+    <td><%= save_table.sale_date %></td>
+    <td><%= save_table.market_type %></td>
+    <td><%= save_table.location %></td>
+    <td><%= save_table.volume %></td>
+    <td><%= save_table.unit %></td>
+    <td><%= save_table.string %></td>
+    <td><%= save_table.quality %></td>
+    <td><%= save_table.commodity %></td>
+    <td><%= save_table.price_received %></td>
+    <td><%= save_table.price_receiptUnit %></td>
+    <td><%= link_to 'Show', save_table %></td>
+    <td><%= link_to 'Edit', edit_save_table_path(save_table) %></td>
+    <td><%= link_to 'Destroy', save_table, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Save table', new_save_table_path %>
