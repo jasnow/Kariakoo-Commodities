@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120428132131) do
+ActiveRecord::Schema.define(:version => 20120428215215) do
 
   create_table "commodities", :force => true do |t|
     t.string   "englishName"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20120428132131) do
   end
 
   create_table "save_tables", :force => true do |t|
+    t.string   "farmer_name"
     t.date     "sale_date"
     t.string   "market_type"
     t.string   "location"

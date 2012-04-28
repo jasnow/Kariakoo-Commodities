@@ -1,5 +1,5 @@
-#ACTION="destroy"
-ACTION="generate"
+ACTION="destroy"
+#ACTION="generate"
 rails ${ACTION} scaffold sale_table \
     farmer_name:string \
     sale_date:date \

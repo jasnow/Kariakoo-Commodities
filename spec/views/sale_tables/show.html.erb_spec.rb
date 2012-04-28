@@ -1,8 +1,9 @@
 require 'spec_helper'
 
-describe "save_tables/show" do
+describe "sale_tables/show" do
   before(:each) do
-    @save_table = assign(:save_table, stub_model(SaveTable,
+    @sale_table = assign(:sale_table, stub_model(SaleTable,
+      :farmer_name => "Farmer Name",
       :market_type => "Market Type",
       :location => "Location",
       :volume => 1,
@@ -18,6 +19,7 @@ describe "save_tables/show" do
   it "renders attributes in <p>" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(/Farmer Name/)
     rendered.should match(/Market Type/)
     rendered.should match(/Location/)
     rendered.should match(/1/)

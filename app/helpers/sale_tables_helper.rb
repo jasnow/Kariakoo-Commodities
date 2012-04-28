@@ -1,0 +1,2 @@
+module SaleTablesHelper
+end

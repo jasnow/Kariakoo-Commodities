@@ -1,16 +1,20 @@
-<%= form_for(@save_table) do |f| %>
-  <% if @save_table.errors.any? %>
+<%= form_for(@sale_table) do |f| %>
+  <% if @sale_table.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@save_table.errors.count, "error") %> prohibited this save_table from being saved:</h2>
+      <h2><%= pluralize(@sale_table.errors.count, "error") %> prohibited this sale_table from being saved:</h2>
 
       <ul>
-      <% @save_table.errors.full_messages.each do |msg| %>
+      <% @sale_table.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
+  <div class="field">
+    <%= f.label :farmer_name %><br />
+    <%= f.text_field :farmer_name %>
+  </div>
   <div class="field">
     <%= f.label :sale_date %><br />
     <%= f.date_select :sale_date %>

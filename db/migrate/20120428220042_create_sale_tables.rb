@@ -1,6 +1,7 @@
-class CreateSaveTables < ActiveRecord::Migration
+class CreateSaleTables < ActiveRecord::Migration
   def change
-    create_table :save_tables do |t|
+    create_table :sale_tables do |t|
+      t.string :farmer_name
       t.date :sale_date
       t.string :market_type
       t.string :location
