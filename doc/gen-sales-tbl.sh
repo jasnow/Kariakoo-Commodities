@@ -1,6 +1,6 @@
 #ACTION="destroy"
 ACTION="generate"
-rails ${ACTION} scaffold sale_table \
+rails ${ACTION} scaffold sale \
     farmer_name:string \
     sale_date:date \
     market_type:string \

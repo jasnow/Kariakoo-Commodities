@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "sale_tables/index" do
+describe "sales/index" do
   before(:each) do
-    assign(:sale_tables, [
-      stub_model(SaleTable,
+    assign(:sales, [
+      stub_model(Sale,
         :farmer_name => "Farmer Name",
         :market_type => "Market Type",
         :location => "Location",
@@ -15,7 +15,7 @@ describe "sale_tables/index" do
         :price_received => 2,
         :price_receiptUnit => "Price Receipt Unit"
       ),
-      stub_model(SaleTable,
+      stub_model(Sale,
         :farmer_name => "Farmer Name",
         :market_type => "Market Type",
         :location => "Location",
@@ -30,7 +30,7 @@ describe "sale_tables/index" do
     ])
   end
 
-  it "renders a list of sale_tables" do
+  it "renders a list of sales" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Farmer Name".to_s, :count => 2

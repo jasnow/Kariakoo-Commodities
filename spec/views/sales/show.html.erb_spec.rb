@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe "sale_tables/show" do
+describe "sales/show" do
   before(:each) do
-    @sale_table = assign(:sale_table, stub_model(SaleTable,
+    @sale = assign(:sale, stub_model(Sale,
       :farmer_name => "Farmer Name",
       :market_type => "Market Type",
       :location => "Location",

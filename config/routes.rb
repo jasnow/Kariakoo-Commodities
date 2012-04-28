@@ -1,5 +1,5 @@
 Kanakoo::Application.routes.draw do
-  resources :sale_tables
+  resources :sales
 
   resources :price_histories
 

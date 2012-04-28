@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Farmer name:</b>
+  <%= @sale.farmer_name %>
+</p>
+
+<p>
+  <b>Sale date:</b>
+  <%= @sale.sale_date %>
+</p>
+
+<p>
+  <b>Market type:</b>
+  <%= @sale.market_type %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @sale.location %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @sale.volume %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @sale.unit %>
+</p>
+
+<p>
+  <b>String:</b>
+  <%= @sale.string %>
+</p>
+
+<p>
+  <b>Quality:</b>
+  <%= @sale.quality %>
+</p>
+
+<p>
+  <b>Commodity:</b>
+  <%= @sale.commodity %>
+</p>
+
+<p>
+  <b>Price received:</b>
+  <%= @sale.price_received %>
+</p>
+
+<p>
+  <b>Price receiptunit:</b>
+  <%= @sale.price_receiptUnit %>
+</p>
+
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>
